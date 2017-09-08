@@ -1,0 +1,11 @@
+<button
+  class='btn btn-primary'
+  (click)="displayDetailsToggle()">Display Details
+</button>
+
+<p *ngIf="displayDetails">Secret Password = tuna</p>
+
+<p *ngFor="let count of clickLog"
+   [ngClass]="{fifthPlus: count >= 5}">
+  {{ count }}
+</p>
